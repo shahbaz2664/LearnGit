@@ -1,0 +1,104 @@
+{% extends "_base/base.twig" %}
+{% block content %}
+    <style>
+        #content{min-height:auto;}
+        .coming{background:url('//b.wadicdn.com/cms/phoenix/gaming/desk_Batman_commingsoon_en.jpg') #98c642 top center no-repeat; height:592px; display:block}
+        .ar .coming{background:url('//b.wadicdn.com/cms/phoenix/gaming/desk_Batman_commingsoon_ar.jpg') #98c642 top center no-repeat; height:592px; display:block}
+        .comingsoon{background:url('//b.wadicdn.com/cms/phoenix/gaming/desk_psController_commingsoon_en.jpg') #0c0c16 top center no-repeat; height:592px; margin-top:50px; display:block}
+        .ar .comingsoon{background:url('//b.wadicdn.com/cms/phoenix/gaming/desk_psController_commingsoon_ar.jpg') #0c0c16 top center no-repeat; height:592px; display:block}
+
+
+        .comingsoonspider{background:url('//b.wadicdn.com/cms/phoenix/gaming/SpiderMan_commingsoon_en.jpg') #98c642 top center no-repeat; height:592px;margin-top:50px; display:block}
+        .ar .comingsoonspider{background:url('//b.wadicdn.com/cms/phoenix/gaming/SpiderMan_commingsoon_ar.jpg') #98c642 top center no-repeat; height:592px; display:block}
+
+        .seo-container{width: 98%; margin: 20px auto;}
+        .seo-container strong{font-size:12px;}
+        .viewallbutton{width: 100px;right: 0px;position: absolute;top: 14px;}
+        .viewallbutton a{color: #3a3a3a;font-weight: 600;font-size: 18px;}
+        .ar .viewallbutton{right: auto;left:10px;width:140px;}
+        .ar .product_scroller ul li{margin-right: auto; margin-left: 22px;width:212px;}
+        .product_scroller ul li {width:212px;border-radius: 4px;background: #fff; padding: 0 10px; margin-bottom:10px; min-height:307px; margin-right:22px;}
+        .product_scroller ul span.price {margin-bottom: 0px;font-size:15px;margin-top:0px;}
+        .product_scroller.homepage_scroller ul .saved {padding: 0px 10px !important; position: absolute; bottom: -8px;}
+        .product_scroller.homepage_scroller ul .pre_reduction {font-size: 12px;color: #666;}
+        .reduction {color: #E24253;font-weight: 700; margin: 2px 5px;display:inline-block;font-size:15px;}
+        .saved {color: #fff;font-size: 13px;background: #E24253;line-height: 35px;padding: 0px 8px;border-radius: 4px 0 4px 0;position: absolute;bottom: 65px;}
+        .ar .saved{bottom:75px;}
+        .product_scroller a.arrow.next{right: 0px;}
+        .product_scroller a.arrow {left: 0px; top:50%; right:auto;}
+        .product_scroller ul li{margin:0 10px 18px 12px;}
+        .product_scroller ul img{width: 190px;max-width: 100%;margin: auto;height: 274px;}
+        .product_scroller ul .product{padding: 25px 0px;text-overflow: ellipsis;color: #333;display: inline-block;font-size: 13px;font-weight: 600;max-width: 100%;white-space: nowrap;height:35px;}
+        .product_scroller ul span.brand {display:none;}
+        .pre_reduction{display: inline-block;font-size:13px;}
+        .ar .product_scroller a.arrow.previous{left: 0px;right: auto;}
+        .ar .product_scroller a.arrow.next{left: auto;right: 0px;}
+        .product_scroller{background-color: #fff;padding: 0px 25px;margin-top: 10px;}
+        .site_width_container .product_scroller a.nav-arrow-right{background-position: -214px -528px;background-repeat: no-repeat;height: 30px;margin: 0 auto;padding: 0;width: 30px;box-shadow: -2px 2px 2px rgba(0,0,0,.2);z-index:99;}
+        .site_width_container .product_scroller a.nav-arrow-left{background-position: -177px -528px;box-shadow: -2px 2px 2px rgba(0,0,0,.2);width:30px;height:30px;}
+        .head_ctrl span{float: none;line-height: 47px;padding-left: 30px;color: #3a3a3a;font-size: 17px;font-weight: 700;}
+        .ar .head_ctrl span{padding-right:30px;}
+        .module{margin-top:40px;}
+
+    </style>
+    </div>
+</div>
+    <div>
+        <a href="/batman-the-enemy-within" class="coming"></a>
+        <div class="site_width_container">
+            <section class="module_grid module">
+                <h1 class="head_ctrl">
+                    <span style="float:none">{% if lang('ar') %}منتجات ذات صلة‎{% else %}Related Products{% endif %}</span>
+                    <div style="clear:both"></div>
+                    <p class="viewallbutton"><a href="/gaming-gaming_titles/?genre_of_game=Adventure&dir=desc"> {% if lang('en') %}View all >>{% else %}إظهار الكل >>{% endif %}</a></p>
+                </h1>
+
+                <div class="product_scroller module ga-row" {% if lang('ar') %} dir="rtl"{% endif %} data-catalog="/gaming-gaming_titles/?genre_of_game=Adventure&dir=desc">
+                    <a href="#" title="Previous" class="arrow previous nav-arrow-left"></a>
+                    <a href="#" title="Next" class="arrow next image_replacement nav-arrow-right"></a>
+                </div>
+            </section>
+        </div>
+        
+        <a href="/mini-ps4-controller" class="comingsoon"></a>
+        <div class="site_width_container">
+            <section class="module_grid module">
+                <h1 class="head_ctrl">
+                    <span style="float:none">{% if lang('ar') %}منتجات ذات صلة‎{% else %}Related Products{% endif %}</span>
+                    <div style="clear:both"></div>
+                    <p class="viewallbutton"><a href="/gaming-gaming_accessories-controllers/"> {% if lang('en') %}View all >>{% else %}إظهار الكل >>{% endif %}</a></p>
+                </h1>
+
+                <div class="product_scroller module ga-row" {% if lang('ar') %} dir="rtl"{% endif %} data-catalog="/gaming-gaming_accessories-controllers/">
+                    <a href="#" title="Previous" class="arrow previous nav-arrow-left"></a>
+                    <a href="#" title="Next" class="arrow next image_replacement nav-arrow-right"></a>
+                </div>
+            </section>
+        </div>
+
+        <a href="/marvels-spider-man-game" class="comingsoonspider"></a>
+        <div class="site_width_container">
+            <section class="module_grid module">
+                <h1 class="head_ctrl">
+                    <span style="float:none">{% if lang('ar') %}منتجات ذات صلة‎{% else %}Related Products{% endif %}</span>
+                    <div style="clear:both"></div>
+                    <p class="viewallbutton"><a href="/gaming-gaming_titles/?genre_of_game=Action%20Adventure&dir=desc"> {% if lang('en') %}View all >>{% else %}إظهار الكل >>{% endif %}</a></p>
+                </h1>
+
+                <div class="product_scroller module ga-row" {% if lang('ar') %} dir="rtl"{% endif %} data-catalog="/gaming-gaming_titles/?genre_of_game=Action%20Adventure&dir=desc">
+                    <a href="#" title="Previous" class="arrow previous nav-arrow-left"></a>
+                    <a href="#" title="Next" class="arrow next image_replacement nav-arrow-right"></a>
+                </div>
+            </section>
+        </div>
+
+        
+
+    <div class="seo-container">
+        {% if lang('en') %}
+        {% else %}
+        {% endif %}
+    </div>
+</div>
+{% include '_scrollers/scroller_unveil_script_brand.twig' %}
+{% endblock %}
